@@ -9,9 +9,7 @@ import { Comment } from './Comment';
 import styles from './Post.module.css';
 
 export function Post({author, publishedAt, content}) {
-  const [comments, setComments] = useState([
-    'Muito bom Jonathan, parabéns!! 👏👏'
-  ]);
+  const [comments, setComments] = useState([]);
   const [newCommentText, setNewCommentText] = useState('');
   const isNewCommentEmpty = newCommentText.length === 0;
 
